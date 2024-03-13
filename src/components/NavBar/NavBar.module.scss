@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(1, 1, 1, 0.97);
+    box-shadow: rgba(100, 255, 100, 0.45) 0px 10px 15px -20px;
+
+    div {
+        display: flex;
+        flex-grow: 1.5;
+        justify-content: center;
+
+
+        h2 {
+            color: white;
+            font-size: 24px;
+        }
+
+        h3 {
+            color: #54d489;
+            font-size: 23px;
+            font-family: 'Finger Paint', cursive;
+        }
+    }
+
+    .menuItens {
+        display: flex;
+        gap: 32px;
+        flex-grow: 2;
+        justify-content: center;
+        
+        li {
+            list-style-type: none;
+            white-space: nowrap;
+
+            a {
+                font-family: 'Times New Roman', Times, serif;
+                color: white;
+                text-decoration: none;
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 2px;
+                    background-color: #24a359;
+                    transition: width 0.5s ease;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media screen and (max-width: 677px) {
+            display: none;
+        }
+    }
+
+    .menuItensIcon {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(37, 37, 37, 0.842);
+        padding: 10px;
+        position: fixed;
+        width: 30px;
+        height: 250px;
+        right: 0px;
+        top: 34%;
+        border-left: 1px solid rgba(0, 0, 0, 0.89);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            li {
+                list-style-type: none;
+            }
+            
+            a:hover {
+                cursor: pointer;
+            }
+
+            img {
+                height: 32px;
+                object-fit: cover;
+            }
+        }
+
+        @media screen and (max-width: 677px) {
+            
+            display: flex;
+            transform: translateX(85%);
+
+            &.show {
+                right: 0;
+                animation: slideIn 0.5s forwards;
+            }
+
+            &.unshow {
+                animation: slideOut 0.5s forwards;
+            }
+        }
+    }
+
+    .hamburguerSection {
+        display: none;
+
+        @media screen and (max-width: 677px) {
+            display: flex;
+            right: 0;
+            position: absolute;
+        }
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(85%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(85%);
+    }
+}

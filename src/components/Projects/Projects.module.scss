@@ -1,0 +1,20 @@
+@use '../../variables' as v;
+
+.Projects {
+    width: 100%;
+    background-color: v.$background-color1;
+    min-height: 550px;
+
+    .projectsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slides {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ 
+}

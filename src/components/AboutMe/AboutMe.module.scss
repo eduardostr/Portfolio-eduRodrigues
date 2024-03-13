@@ -1,0 +1,154 @@
+@use "../../variables" as v;
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: v.$background-color2;
+  min-height: 450px;
+
+  .conteudoSobreMim {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 80%;
+    flex: 1;
+
+    .secretMessage {
+      span {
+        color: #54d489;
+      }
+    }
+
+    p {
+      word-wrap: break-word;
+      color: white;
+      flex: 2;
+      padding: 15px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #54d489;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 1px;
+          background-color: #24a359;
+          transition: width 0.5s ease;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+
+    .animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      flex: 1.2;
+
+      .image {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        object-fit: contain;
+        scale: 4;
+
+        &:last-of-type {
+          opacity: 0.8;
+          filter: blur(0.1px);
+        }
+      }
+
+      .blurImage {
+        height: 95px;
+        width: 95px;
+        position: absolute;
+        object-fit: contain;
+        scale: 3.9;
+        filter: blur(0.6px);
+        opacity: 0.35;
+        filter: saturate(1.3);
+      }
+
+      .rotateRight {
+        animation: rotateRight 80s linear infinite;
+      }
+
+      .rotateLeft {
+        animation: rotateLeft 75s linear infinite;
+      }
+
+      .focus {
+        background-color: #646464;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        z-index: 2;
+        scale: 3;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #54d489;
+          transition: 0.3s ease-in-out;
+        }
+      }
+
+      &:active {
+        .rotateRight {
+          animation: rotateRight 8s linear infinite, speed-up 2s forwards;
+        }
+
+        .rotateLeft {
+          animation: rotateLeft 7s linear infinite, speed-up 2s forwards;
+        }
+      }
+
+      &.rapidRotate .rotateRight {
+        animation: rotateRight 2s linear infinite;
+      }
+
+      &.rapidRotate .rotateLeft {
+        animation: rotateLeft 2s linear infinite;
+      }
+
+      @media screen and (max-width: 1080px) {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes speed-up {
+  to {
+    animation-play-state: paused;
+  }
+}

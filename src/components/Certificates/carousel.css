@@ -1,0 +1,69 @@
+.certificates .p-carousel {
+  display: flex;
+  align-items: center;
+}
+
+.certificates .p-carousel-content {
+  align-items: center;
+  width: 90%;
+}
+
+.certificates .p-carousel-container {
+  width: 80%;
+}
+
+.certificates .p-carousel-item {
+  max-width: 33.3%;
+  height: 230px;
+}
+
+.certificates .p-icon {
+  color: white;
+  width: 18px;
+  height: 18px;
+}
+
+.certificates .p-icon:hover {
+  scale: 1.1;
+}
+
+.certificates .p-icon:active {
+  scale: 0.9;
+}
+
+.certificates .p-disabled {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .certificates .p-carousel-container {
+    width: 100%;
+  }
+
+  .certificates .p-carousel-item {
+    max-width: 20%;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .certificates .p-carousel-container {
+    width: 65%;
+  }
+
+  .certificates .p-carousel-item {
+    max-width: 50%;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .certificates .p-carousel-container {
+    width: 30%;
+  }
+
+  .certificates .p-carousel-item {
+    max-width: 100%;
+    height: 230px;
+  }
+}

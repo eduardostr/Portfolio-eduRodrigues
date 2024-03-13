@@ -1,0 +1,64 @@
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 3px 10px;
+        transition: 0.8s;
+    }
+
+    &.open {
+        .bar:nth-child(1) {
+          transform: rotate(-45deg) translate(-5px, 6px);
+        }
+    
+        .bar:nth-child(2) {
+          animation: displayOpen 0.5s forwards;
+        }
+    
+        .bar:nth-child(3) {
+          transform: rotate(45deg) translate(0, 0);
+        }
+    }
+
+    &.close {
+        .bar:nth-child(1) {
+          transform: rotate(0) translate(0, 0);
+        }
+    
+        .bar:nth-child(2) {
+          animation: displayClose 0.5s forwards;
+        }
+    
+        .bar:nth-child(3) {
+          transform: rotate(0) translate(0, 0);
+        }
+    }
+}
+
+@keyframes displayOpen {
+  0% {
+    display: none;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+@keyframes displayClose {
+  0% {
+    opacity: 0;
+    background-color: #bbffd7;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: #ffffff;
+    display: block;
+  }
+}
