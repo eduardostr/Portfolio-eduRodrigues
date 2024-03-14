@@ -8,6 +8,13 @@ export interface Certificado {
 
 export const certificados: Certificado[] = [
   {
+    nome: "O que é JUnit",
+    instituicao: "DevMedia",
+    horas: "4",
+    ano: "2024",
+    link: "assets/pdf/Certificado de Conclusão - O que é JUnit.pdf",
+  },
+  {
     nome: "Início Rápido em Teste e QA",
     instituicao: "Iterasys",
     horas: "15",
