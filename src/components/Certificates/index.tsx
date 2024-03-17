@@ -65,7 +65,7 @@ export default function Certificates() {
           </a>
         ) : (
           <Link
-            to="Certificados-Alura"
+            to="Certificados-AICS"
             className={style.pdfLink}
             target="_blank"
           >
