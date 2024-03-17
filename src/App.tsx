@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Global.css';
+import AICSCertificates from './Pages/AICSCertificates';
 import AboutMe from './components/AboutMe';
 import Certificates from './components/Certificates';
 import Me from './components/Me';
@@ -22,6 +23,7 @@ function App() {
             <Certificates />
             <SendEmail />
           </>} />
+          <Route path="/Certificados-AICS" element={<AICSCertificates />} />
         </Routes>
       </main>
     </Router>
