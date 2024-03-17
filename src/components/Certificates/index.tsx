@@ -49,7 +49,7 @@ export default function Certificates() {
             Ano de Conclusão: <span>{certificate.ano}</span>
           </p>
         </div>
-        {certificate.instituicao != "AICS" ? (
+        {certificate.instituicao !== "AICS" ? (
           <a
             className={style.pdfLink}
             target="_blank"

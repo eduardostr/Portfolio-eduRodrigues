@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-no-target-blank */
+import { Fragment } from 'react'
 import Title from '../../components/Title'
 import style from './AICSCertificates.module.scss'
 
