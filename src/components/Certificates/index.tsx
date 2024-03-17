@@ -42,14 +42,14 @@ export default function Certificates() {
             Horas:{" "}
             <span>
               {certificate.horas}{" "}
-              {certificate.instituicao !== "Alura" ? "horas" : ""}
+              {certificate.instituicao !== "AICS" ? "horas" : ""}
             </span>
           </p>
           <p>
             Ano de Conclusão: <span>{certificate.ano}</span>
           </p>
         </div>
-        {certificate.instituicao != "Alura" ? (
+        {certificate.instituicao != "AICS" ? (
           <a
             className={style.pdfLink}
             target="_blank"
