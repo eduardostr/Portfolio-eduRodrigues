@@ -8,9 +8,9 @@ export interface Certificado {
 
 export const certificados: Certificado[] = [
   {
-    nome: "Accredited Software Testing Fundamentals Certification (ASTFC)",
+    nome: "Accredited Software Testing Fundamentals Certification",
     instituicao: "AICS",
-    horas: "",
+    horas: "--",
     ano: "2024",
     link: "assets/pdf/Certificate - ASTFC.pdf",
   },
