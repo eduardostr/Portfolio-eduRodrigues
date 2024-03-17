@@ -8,6 +8,13 @@ export interface Certificado {
 
 export const certificados: Certificado[] = [
   {
+    nome: "Accredited Software Testing Fundamentals Certification (ASTFC)",
+    instituicao: "AICS",
+    horas: "",
+    ano: "2024",
+    link: "assets/pdf/Certificate - ASTFC.pdf",
+  },
+  {
     nome: "O que é JUnit",
     instituicao: "DevMedia",
     horas: "4",
