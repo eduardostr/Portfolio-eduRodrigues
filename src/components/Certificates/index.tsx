@@ -1,10 +1,10 @@
-import style from "./Certificates.module.scss";
-import Titulo from "../Title";
-import { Certificado, certificados } from "./certificateData";
-import { Carousel } from "primereact/carousel";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import "./carousel.css";
+import style from "./Certificates.module.scss"
+import Titulo from "../Title"
+import { Certificado, certificados } from "./certificateData"
+import { Carousel } from "primereact/carousel"
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
+import "./carousel.css"
 
 export default function Certificates() {
   const responsiveOptions = [
@@ -28,7 +28,7 @@ export default function Certificates() {
       numVisible: 1,
       numScroll: 1,
     },
-  ];
+  ]
 
   const certificateTemplate = (certificate: Certificado) => {
     return (
@@ -42,44 +42,44 @@ export default function Certificates() {
             Horas:{" "}
             <span>
               {certificate.horas}{" "}
-              {certificate.instituicao !== "AICS" ? "horas" : ""}
+              {(certificate.instituicao !== "AICS" && certificate.instituicao !== "QAx") ? "horas" : ""}
             </span>
           </p>
           <p>
             Ano de Conclusão: <span>{certificate.ano}</span>
           </p>
         </div>
-        {certificate.instituicao !== "AICS" ? (
+        {certificate.instituicao === "AICS" ? (
+          <Link
+            to="Certificados-AICS"
+            className={style.pdfLink}
+            target="_blank"
+          >
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 1 }}>
+              Ver certificado
+            </motion.button>
+          </Link>
+        ) : certificate.instituicao === "QAx" ? (
+          <Link to="Certificados-QAX" className={style.pdfLink} target="_blank">
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 1 }}>
+              Ver certificado
+            </motion.button>
+          </Link>
+        ) : (
           <a
             className={style.pdfLink}
             target="_blank"
             rel="noreferrer"
             href={certificate.link}
           >
-            <motion.button
-              whileHover={{ scale: 1. }}
-              whileTap={{ scale: 1 }}
-            >
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 1 }}>
               Ver certificado
             </motion.button>
           </a>
-        ) : (
-          <Link
-            to="Certificados-AICS"
-            className={style.pdfLink}
-            target="_blank"
-          >
-            <motion.button
-              whileHover={{ scale: 1 }}
-              whileTap={{ scale: 1 }}
-            >
-              Ver certificado
-            </motion.button>
-          </Link>
         )}
       </div>
-    );
-  };
+    )
+  }
 
   return (
     <section id="Certificates" className={`${style.certificates} certificates`}>
@@ -92,5 +92,5 @@ export default function Certificates() {
         />
       </section>
     </section>
-  );
+  )
 }

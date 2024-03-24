@@ -22,6 +22,13 @@ export const certificados: Certificado[] = [
     link: "assets/pdf/Certificado de Conclusão - Início Rápido em Teste e QA.pdf",
   },
   {
+    nome: "Certificados do QAx",
+    instituicao: "QAx",
+    horas: "--",
+    ano: "2024",
+    link: "-",
+  },
+  {
     nome: "Certificados da AICS",
     instituicao: "AICS",
     horas: "--",
