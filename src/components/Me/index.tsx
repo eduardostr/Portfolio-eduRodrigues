@@ -32,7 +32,7 @@ export default function Me() {
       <section>
         <div className={style.nameSection}>
           <h1>Eduardo Rodrigues</h1>
-          <h2>Estudante de Programação</h2>
+          <h2>Analista QA</h2>
           <div className={style.networks}>
             <SocialNetworks
               link="https://github.com/eduardostr"

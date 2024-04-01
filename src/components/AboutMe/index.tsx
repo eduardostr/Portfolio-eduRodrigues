@@ -19,19 +19,19 @@ export default function AboutMe() {
       <Title titleName="Sobre Mim" />
       <div className={style.conteudoSobreMim}>
         <p className={`${isAnimating ? style.secretMessage : ""}`}>
-          Me chamo Eduardo Santos Rodrigues, nascido e criado em <span>L</span>
+          Me chamo Eduardo Rodrigues, nascido e criado em <span>L</span>
           auro de Freitas-BA.
           <br />
-          Sou um entusiasta da tecnologia <span>e</span> amo o desafio de
-          encontrar soluções inovadoras e criativas para problemas complexos.{" "}
-          <span>H</span>oje sou estudante de Análise e Desenvol<span>vi</span>
-          mento de Sistemas na UNINASSAU.
+          Sou um profissional da área de QA, <span>com</span> formação em
+          andamento em Análise e desenvolvimento de sistemas <span>pela </span>
+          UNINASSAU. Me considero um entusiasta da tecnologia e amo o desafio de
+          encontrar soluções inovadoras e criativas para problemas complexos.
           <br />
-          Minhas habilidades <span>t</span>écnicas <span>e</span> experiência
-          estão centradas na área de testes de software. Com conhecimento em
-          diversas abordagens, incluindo Testes Funcionais, Testes
-          Exploratórios, Testes de Integração, Testes de API, Escrita e Analise
-          de Testes.
+          As minhas <span>com</span>petências <span>té</span>cnicas e
+          experiência estão centradas na área de testes de software, com
+          conhecimentos em diversas abordagens, incluindo testes manuais e
+          automatizados, testes exploratórios e de regressão, escrita de
+          cenários de testes com BDD, testes de API e de integração.
           <br />
           <br />
           <a
