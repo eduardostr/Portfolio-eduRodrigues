@@ -55,7 +55,7 @@ export default function SendEmail() {
                 email: email
             };
 
-            const response = await emailjs.send("service_d4rsizk", "template_bfn3ruh", templateParams, "2ce9DdglGmBkpoRS7");
+            const response = await emailjs.send("service_cb9qznh", "template_bfn3ruh", templateParams, "QpUkvm33g4iurjDRQ");
             console.log("E-mail enviado:", response.status, response.text);
             const nameToAlert = name;
             setName('');
@@ -136,7 +136,7 @@ export default function SendEmail() {
                     <div>
                         <h1>Email</h1>
                         <a href="mailto:dev.edusantr@gmail.com">
-                            <p>dev.edusantr@gmail.com</p>
+                            <p>edusantr@hotmail.com</p>
                         </a>
                     </div>
                     <div>
