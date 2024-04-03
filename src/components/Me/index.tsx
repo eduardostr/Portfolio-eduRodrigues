@@ -3,7 +3,7 @@ import { useState } from "react";
 import SocialNetworks from "../SocialNetworks";
 import style from "./Me.module.scss";
 import { motion } from "framer-motion";
-import { FaPizzaSlice } from "react-icons/fa6";
+import { GiCoffeeCup } from "react-icons/gi";
 
 export default function Me() {
   const [isDragging, setIsDragging] = useState(false);
@@ -55,7 +55,7 @@ export default function Me() {
           <div className={style.secretMessage}>
             <p>Vou te contar um segredo...</p>
             <p>
-              Eu <strong>AMO</strong> pizza <FaPizzaSlice size={15} />
+              Eu <strong>AMO</strong> café <GiCoffeeCup size={15} />
             </p>
           </div>
           <motion.div
