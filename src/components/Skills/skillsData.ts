@@ -29,4 +29,22 @@ export const skillsData = [
     descricao:
       "SASS (Syntactically Awesome Stylesheets) é uma linguagem de extensão do CSS que adiciona funcionalidades como variáveis, aninhamento de seletores e mixins. Facilita a escrita e manutenção de estilos complexos.",
   },
+  {
+    name: "Robot",
+    imgSrc: "assets/img/skills/robot-framework-logo.png",
+    descricao:
+      "Robot Framework é uma ferramenta fácil de usar, com rápida curva de aprendizado. Ele utiliza uma linguagem de script simples e intuitiva, que pode ser facilmente compreendida mesmo por desenvolvedores pouco experientes ou citizen developers.",
+  },
+  {
+    name: "Selenium",
+    imgSrc: "assets/img/skills/selenium-logo.png",
+    descricao:
+      "Selenium é um conjunto de ferramentas de código aberto multiplataforma, usado para testar aplicações web pelo browser de forma automatizada. Ele executa testes de funcionalidades da aplicação web e testes de compatibilidade entre browser e plataformas diferentes.",
+  },
+  {
+    name: "Cucumber",
+    imgSrc: "assets/img/skills/cucumber-logo.png",
+    descricao:
+      "Cucumber é uma ferramenta de teste de software que suporta o Desenvolvimento Orientado por Comportamento (BDD - Behavior Driven Development). O objetivo principal do Cucumber é permitir uma comunicação eficaz e clara entre os membros da equipe técnica e os stakeholders não técnicos.",
+  },
 ];

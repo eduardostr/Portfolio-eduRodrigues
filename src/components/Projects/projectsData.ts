@@ -9,8 +9,16 @@ export type typeProjectData = {
 
 export const projetctData = [
   {
+    imageName: "assets/img/projects/walkdog.png",
+    name: "Walkdog Automation",
+    des: "Este foi um projeto desenvolvido para automação de testes, utilizando o ChatGPT para auxílio na escrita de cenários baseados em Gherkin, e Robot Framework para execução dos testes automatizados",
+    ling: "Robot, Selenium, e Cucumber",
+    link: "https://github.com/eduardostr/automatizai-robot-walkdog",
+    demo: "https://walkdog.vercel.app/",
+  },
+  {
     imageName: "assets/img/projects/cafedeliciacreme.jpg",
-    name: "CaféDelicia",
+    name: "Café Delicia",
     des: "Café Delícia Creme é uma cafeteria que entrega o conceito mais atual do mercado de café gourmet, no qual tive a honra de participar e elaborar toda a criação da landing page do começo ao fim",
     ling: "SASS, Next.js, e JavaScript",
     link: "https://github.com/eduardostr/cafe-delicia-creme",
