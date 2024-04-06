@@ -45,7 +45,7 @@ export default function Me() {
               name="linkedin"
             />
             <SocialNetworks
-              link="https://www.instagram.com/eduu.rodriguues/"
+              link="https://www.instagram.com/eduuardodrm/"
               image="assets/img/social-icons/instagram.png"
               name="instagram"
             />

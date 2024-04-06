@@ -155,7 +155,7 @@ export default function SendEmail() {
                                 boxShadow={false}
                             />
                             <SocialNetworks
-                                link='https://www.instagram.com/eduu.rodriguues/'
+                                link='https://www.instagram.com/eduuardodrm/'
                                 image='assets/img/social-icons/instagram.png'
                                 name='instagram'
                                 boxShadow={false}
