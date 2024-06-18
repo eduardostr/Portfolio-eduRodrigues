@@ -8,7 +8,7 @@ export interface Certificado {
 
 export const certificados: Certificado[] = [
   {
-    nome: "Introdução à Programação Orientada a Objetos",
+    nome: "Intr. à Prog. Orientada a Objetos",
     instituicao: "Fundação Bradesco",
     horas: "5",
     ano: "2024",
