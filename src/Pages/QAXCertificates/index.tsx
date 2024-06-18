@@ -5,6 +5,14 @@ import style from './QAXCertificates.module.scss'
 
 const qaxCertificates = [
     {
+        nome: 'BDD eXperience',
+        instituicao: 'QAx',
+        horas: '5',
+        ano: '2024',
+        linkPdf: 'assets/pdf/Eduardo Rodrigues - BDD_eXperience - QAx.pdf',
+        link: 'assets/img/qaxImages/BDD_eXperience.png',
+    },
+    {
         nome: 'AutomatizAi - Robot Framework e ChatGPT',
         instituicao: 'QAx',
         horas: '8',

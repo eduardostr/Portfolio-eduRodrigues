@@ -8,6 +8,13 @@ export interface Certificado {
 
 export const certificados: Certificado[] = [
   {
+    nome: "Introdução à Programação Orientada a Objetos",
+    instituicao: "Fundação Bradesco",
+    horas: "5",
+    ano: "2024",
+    link: "assets/pdf/Certificado de Conclusão - Introdução à Programação Orientada a Objetos.pdf",
+  },
+  {
     nome: "O que é JUnit",
     instituicao: "DevMedia",
     horas: "4",
