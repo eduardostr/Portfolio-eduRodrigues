@@ -19,19 +19,10 @@ export default function AboutMe() {
       <Title titleName="Sobre Mim" />
       <div className={style.conteudoSobreMim}>
         <p className={`${isAnimating ? style.secretMessage : ""}`}>
-          Me chamo <span>Edu</span>ardo <span>Rodri</span>gues, nascido e criado em <span>Lau</span>
-          ro de <span>Frei</span>tas-BA.
-          <br />
-          Sou um <span>pro</span>fissional da área de QA, <span>com</span> formação em
-          andamento em Análise e desenvolvimento de sistemas <span>pela </span>
-          UNINASSAU. Me considero um entusiasta da <span>tec</span>nologia e amo o desafio de
-          encontrar soluções <span>ino</span>vadoras e <span>cri</span>ativas para problemas <span>com</span>plexos.
-          <br />
-          As minhas <span>com</span>petências <span>té</span>cnicas e
-          <span> exp</span>eriência estão centradas na <span>á</span>rea de testes de <span>sof</span>tware, com
-          conhecimentos em diversas abordagens, incluindo testes <span>ma</span>nuais e
-          <span> aut</span>omatizados, testes <span>exp</span>loratórios e de <span>reg</span>ressão, escrita de
-          <span> cená</span>rios de <span>tes</span>tes com BDD, <span>tes</span>tes de API e de <span>int</span>egração.
+          Olá, meu nome é <span>Eduardo Rodrigues</span> e nasci em <span>Lauro de Freitas.</span> 
+          Atualmente, sou estudante de <span>Análise e desenvolvimento de sistemas</span> na UniNassau. 
+          Me considero um entusiasta da <span>tecnologia</span> e amo o desafio de 
+          encontrar soluções <span>inovadoras</span> e <span>criativas</span> para problemas complexos.
           <br />
           <br />
           <a
