@@ -19,19 +19,23 @@ export default function AboutMe() {
       <Title titleName="Sobre Mim" />
       <div className={style.conteudoSobreMim}>
         <p className={`${isAnimating ? style.secretMessage : ""}`}>
-          Me chamo <span>Edu</span>ardo <span>Rodri</span>gues, nascido e criado em <span>Lau</span>
-          ro de <span>Frei</span>tas-BA.
           <br />
-          Sou um <span>pro</span>fissional da área de QA, <span>com</span> formação em
-          andamento em Análise e desenvolvimento de sistemas <span>pela </span>
-          UNINASSAU. Me considero um entusiasta da <span>tec</span>nologia e amo o desafio de
-          encontrar soluções <span>ino</span>vadoras e <span>cri</span>ativas para problemas <span>com</span>plexos.
+          <span>Olá,</span> Meu nome é <span>Edua</span>rdo Santos Rodri
+          <span>gues</span> e nasci em <span>Lau</span>ro de Frei
+          <span>tas</span> no ano de 1999.
           <br />
-          As minhas <span>com</span>petências <span>té</span>cnicas e
-          <span> exp</span>eriência estão centradas na <span>á</span>rea de testes de <span>sof</span>tware, com
-          conhecimentos em diversas abordagens, incluindo testes <span>ma</span>nuais e
-          <span> aut</span>omatizados, testes <span>exp</span>loratórios e de <span>reg</span>ressão, escrita de
-          <span> cená</span>rios de <span>tes</span>tes com BDD, <span>tes</span>tes de API e de <span>int</span>egração.
+          <br />
+          Sempre fui apaixonado por <span>tecno</span>logia desde criança, o que
+          me levou a seguir uma carreira na área. Atualmente, sou estudante de{" "}
+          <span>Anál</span>ise e <span>Desen</span>volvimento de{" "}
+          <span>Sist</span>emas na UniNassau, focado na área de análise de
+          dados.
+          <br />
+          <br />
+          Meu objetivo é me tornar um <span>engen</span>heiro de dados e criar
+          experiências incríveis. Como um trabalhador determinado. Estou{" "}
+          <span>compro</span>metido em cumprir prazos e compartilhar meu{" "}
+          <span>conhe</span>cimento com minha equipe.
           <br />
           <br />
           <a

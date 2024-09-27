@@ -149,13 +149,13 @@ export default function SendEmail() {
                                 boxShadow={false}
                             />
                             <SocialNetworks
-                                link='https://www.linkedin.com/in/eduardo-rodrigues-368870293/'
+                                link='https://www.linkedin.com/in/eduardostr-db/'
                                 image='assets/img/social-icons/linkedin.png'
                                 name='linkedin'
                                 boxShadow={false}
                             />
                             <SocialNetworks
-                                link='https://www.instagram.com/eduuardodrm/'
+                                link='https://www.instagram.com/eduuuardorodrigues/'
                                 image='assets/img/social-icons/instagram.png'
                                 name='instagram'
                                 boxShadow={false}

@@ -47,7 +47,7 @@ export default function NavBar() {
         <nav className={style.navbar}>
             <div>
                 <h3>/*</h3>
-                <h2>Portfólio</h2>
+                <h2>Edu Rodrigues</h2>
                 <h3>*/</h3>
             </div>
             <ul className={style.menuItens}>
